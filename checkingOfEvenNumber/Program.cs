@@ -10,6 +10,22 @@ namespace checkingOfEvenNumber
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите число для проверки на чётность: ");
+            byte userNumber = Convert.ToByte(Console.ReadLine());
+            byte n = (byte)(userNumber << 7);
+
+            if (n == 0)
+            {
+                Console.WriteLine("Число является чётным.");
+            }
+            else
+            {
+                Console.WriteLine("Число  нечётное.");
+            }
+
+            Console.ReadKey();
+
+        
         }
     }
 }
